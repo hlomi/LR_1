@@ -1,0 +1,15 @@
+n = 5
+
+for i in range (5):
+
+    num = 5
+    for j in range (5):
+        if j > i:
+            print (" ", end =" ")
+            num +1
+        else:
+            print(num, end =" ")
+            num -= 1 
+    print("") 
+
+
