@@ -1,16 +1,18 @@
 clock = 0
+total_strikes = 0
 
 print("Hour", " ", "Clock strikes")
 
 for i in range(16): 
     if i == 0:
-        clock = 12
-    elif i > 12:
-        clock = i - 12
+        clock = 0
     else:
         clock = i
-
     if i > 0 and i > 10:
         print(i, " " * 4, clock)
     if i < 10:
         print(i, " " * 5, clock)
+
+    total_strikes += clock
+
+print ("Сумарна кількість ударів годинника: ", total_strikes)
